@@ -79,7 +79,6 @@ WSGI_APPLICATION = 're_engg.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -154,21 +153,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-}
-
+} 
 
 
 
 AUTH_USER_MODEL = 'accounts.User'
-
-
-
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER='n74991025@gmail.com'
-EMAIL_HOST_PASSWORD='qfxk jawy woco trrn'
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-FROM_MAIL = EMAIL_HOST_USER
-SUPPORT_MAIL = ['n74991025@gmail.com']
